@@ -16,7 +16,7 @@
     .container {
         display: flex;
         flex-direction: column;
-        min-height:100vh;
+        min-height:100lvh;
         /* align-items:center; */
         /* border: 3px solid green; */
     }
@@ -71,7 +71,7 @@
 
     main {
         flex-basis: 70%;
-        /* border: 1px solid red; */
+        border: 1px solid red;
         padding: 8%;
         background-color: hsl(0, 100%, 100%);
         border-radius: 1rem;
