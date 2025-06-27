@@ -71,7 +71,7 @@
 
     main {
         flex-basis:100%;
-        /* border: 1px solid red; */
+        border: 1px solid red;
         padding: 8%;
         background-color: hsl(0, 100%, 100%);
         /* border-radius: 1rem; */
