@@ -18,7 +18,7 @@
         flex-direction: column;
         min-height:100vh;
         /* align-items:center; */
-        /* border: 3px solid green; */
+        border: 3px solid green;
     }
 
     .image {
