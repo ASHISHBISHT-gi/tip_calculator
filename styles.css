@@ -8,22 +8,25 @@
         margin: 0;
         padding: 0;
         width: 100vw;
-        height: 100vh;
+        /* height: 100vh; */
         font-family: "Space Mono", monospace;
+        background-color: rgba(197, 228, 231, 255);
     }
 
     .container {
         display: flex;
         flex-direction: column;
         /* align-items:center; */
-        border: 3px solid green;
+        /* border: 3px solid green; */
     }
 
     .image {
-        flex-basis: 20%;
+        /* flex-basis: 20%; */
         display: flex;
         justify-content: center;
         align-items: center;
+        background-color: rgba(197, 228, 231, 255);
+        padding: 6% 0%;
     }
 
     input {
@@ -32,23 +35,27 @@
         font-size: 24px;
         text-align: end;
         border-radius: 0.5rem;
+        color: hsl(183, 100%, 15%);
         border: 0;
         background-color: hsl(185, 41%, 84%);
         font-family: "Space Mono", monospace;
         padding: 4%;
     }
-    form{
+
+    form {
         position: relative;
     }
-    form>span:nth-of-type(1){
-        position:absolute;
-        top:10%;
-        left:4%;
+
+    form>span:nth-of-type(1) {
+        position: absolute;
+        top: 10%;
+        left: 4%;
     }
-      form>span:nth-of-type(2){
-        position:absolute;
-        top:92%;
-        left:5%;
+
+    form>span:nth-of-type(2) {
+        position: absolute;
+        top: 92%;
+        left: 5%;
     }
 
     input:focus {
@@ -62,10 +69,11 @@
     }
 
     main {
-        flex-basis: 80%;
-        border: 1px solid red;
+        /* flex-basis: 80%; */
+        /* border: 1px solid red; */
         padding: 8%;
         background-color: hsl(0, 100%, 100%);
+        border-radius: 1rem;
         /* box-sizing:border-box; */
     }
 
@@ -143,6 +151,13 @@
     .calculator>div {
         display: flex;
         justify-content: space-between;
+    }
+
+    .calculator button {
+        background-color: hsl(172, 67%, 45%);
+        color: hsl(183, 100%, 15%);
+        font-family: "Space Mono", monospace;
+        font-weight: bold;
     }
 
     .amount,
