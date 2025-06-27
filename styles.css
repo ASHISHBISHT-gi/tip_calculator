@@ -1,111 +1,173 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 /* Mobile */
 @media screen and (max-width: 73.0625em) {
-body,html{
-    margin:0;
-    padding:0;
-    width:100vw;
-    height:100vh;
-    font-family: "Space Mono", monospace;
-}
-    .container{
-        display:flex;
-        flex-direction:column;
-        /* align-items:center; */
-        border:3px solid green;
-        
-    }
-    .image{
-        flex-basis:20%;
-        display:flex;
-        justify-content:center;
-        align-items:center;
-    }
-    input{
-        min-width:0;
-        box-sizing: border-box;
-        font-size:24px;
-        text-align:end;
+
+    body,
+    html {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
         font-family: "Space Mono", monospace;
     }
-    main{
-        flex-basis:80%;
-        border:1px solid red;
-        padding:8%;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        /* align-items:center; */
+        border: 3px solid green;
+    }
+
+    .image {
+        flex-basis: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input {
+        min-width: 0;
+        box-sizing: border-box;
+        font-size: 24px;
+        text-align: end;
+        border-radius: 0.5rem;
+        border: 0;
+        background-color: hsl(185, 41%, 84%);
+        font-family: "Space Mono", monospace;
+        padding: 4%;
+    }
+    form{
+        position: relative;
+    }
+    form>span:nth-of-type(1){
+        position:absolute;
+        top:10%;
+        left:4%;
+    }
+      form>span:nth-of-type(2){
+        position:absolute;
+        top:92%;
+        left:5%;
+    }
+
+    input:focus {
+        outline-color: hsl(172, 67%, 45%);
+    }
+
+    #custom {
+        text-align: center;
+        font-family: "Space Mono", monospace;
+        font-weight: bold;
+    }
+
+    main {
+        flex-basis: 80%;
+        border: 1px solid red;
+        padding: 8%;
+        background-color: hsl(0, 100%, 100%);
         /* box-sizing:border-box; */
     }
 
-    label{
-        display:block;
-        font-size:14px;
-        margin-bottom:2%;
-        font-weight:bold;
-    }
-    label[for="select"]{
-        margin-top:6%;
-    }
-    label[for="people"]{
-        margin-top:6%;
-    }
-
-    button{
-        font-family: "Space Mono", monospace;
-        font-size:24px;
-        font-weight: 700;
-    }
-    #bill,#people{
-        height:2.5rem;
-        width:100%;
-    }
-
-    .tip{
-        display:grid;
-        grid-template-columns:1fr 1fr;
-        grid-template-rows:1fr 1fr 1fr;
-        gap:1rem;
-
-    }
-    .tip>button:nth-of-type(1){
-        grid-row:1/2;
-        grid-column:1;
-        height:3rem;
-    }
-    .tip>button:nth-of-type(2){
-        grid-row:1/2;
-        grid-column:2;
-    }
-    .calculator{
-        background-color:hsl(183, 100%, 15%);
-        display:flex;
-        flex-direction:column;
-        justify-content:space-between;
-        height:32.92%;
-        margin-top:6%;
-        padding:5%;
-        box-sizing:border-box;
-    }
-    .calculator *{
-        margin:0;
-        padding:0;
-    }
-    .calculator>div{
-        display:flex;
-        justify-content:space-between;
-    }
-    .amount,.total{
-        display:flex;
-        flex-direction:column;
-    }
-    h2{
-        display:flex;
-        justify-content:center;
-        align-items:center;
-    }
-    .total{
-        
-    }
-    .amount>p:nth-of-type(1){
+    label {
+        display: block;
+        font-size: 14px;
+        margin-bottom: 2%;
         font-weight: bold;
+        color: hsl(186, 14%, 43%);
+    }
+
+    label[for="select"] {
+        margin-top: 6%;
+    }
+
+    label[for="people"] {
+        margin-top: 6%;
+    }
+
+    button {
+        font-family: "Space Mono", monospace;
+        font-size: 24px;
+        font-weight: 700;
+        border: 0;
+        background-color: hsl(183, 100%, 15%);
+        color: hsl(0, 100%, 100%);
+        border-radius: 0.5rem;
+    }
+
+    button:hover {
+        background-color: hsl(172, 67%, 45%);
+        color: black;
+    }
+
+    #bill,
+    #people {
+        height: 2.5rem;
+        width: 100%;
+    }
+
+    .tip {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .tip>button:nth-of-type(1) {
+        grid-row: 1/2;
+        grid-column: 1;
+        height: 3rem;
+    }
+
+    .tip>button:nth-of-type(2) {
+        grid-row: 1/2;
+        grid-column: 2;
+    }
+
+    .calculator {
+        background-color: hsl(183, 100%, 15%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 32.92%;
+        margin-top: 6%;
+        padding: 5%;
+        box-sizing: border-box;
+    }
+
+    .calculator * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .calculator>div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .amount,
+    .total {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: hsl(172, 67%, 45%);
+    }
+
+    .total {}
+
+    .amount>p:nth-of-type(1),
+    .total>p:nth-of-type(1) {
+        font-weight: bold;
+        color: hsl(189, 47%, 97%);
+    }
+
+    .amount>p:nth-of-type(2),
+    .total>p:nth-of-type(2) {
+        color: hsl(185, 41%, 84%);
     }
 }

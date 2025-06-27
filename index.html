@@ -33,22 +33,34 @@
       <section>
         <form>
           <label for="bill">Bill</label>
-          <input type="number" id="bill">
+          <span><img src="./images/icon-dollar.svg" alt="" /></span>
+          <input min="0" type="number" id="bill" value="0" />
           <label for="select">Select Tip %</label>
           <div class="tip">
-            <button>5%</button><button>10%</button><button>15%</button><button>25%</button><button>50%</button>
-            <input type="text" name="Custom" id="custom">
+            <button>5%</button><button>10%</button><button>15%</button
+            ><button>25%</button><button>50%</button>
+            <input
+              min="0"
+              type="number"
+              name="Custom"
+              placeholder="Custom"
+              id="custom"
+            />
           </div>
           <label for="people">Number of People</label>
-          <input type="number" id="people">
+          <span><img src="./images/icon-person.svg" alt="" /></span>
+          <input type="number" id="people" />
         </form>
       </section>
       <section class="calculator">
         <div>
-          <div class="amount"><p>Tip Amount</p> <p>/ person</p></div>
+          <div class="amount">
+            <p>Tip Amount</p>
+            <p>/ person</p>
+          </div>
           <h2>$4.27</h2>
         </div>
-        <div >
+        <div>
           <div class="total">
             <p>Total</p>
             <p>/ person</p>
