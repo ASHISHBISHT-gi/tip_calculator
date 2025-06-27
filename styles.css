@@ -22,7 +22,7 @@
     }
 
     .image {
-        flex-basis: 30%;
+        /* flex-basis: 30%; */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -70,11 +70,13 @@
     }
 
     main {
-        flex-basis: 70%;
-        border: 1px solid red;
+        flex-basis:100%;
+        /* border: 1px solid red; */
         padding: 8%;
         background-color: hsl(0, 100%, 100%);
-        border-radius: 1rem;
+        /* border-radius: 1rem; */
+        border-top-left-radius:1rem;
+        border-top-right-radius:1rem;
         /* box-sizing:border-box; */
     }
 
