@@ -7,6 +7,7 @@ body,html{
     padding:0;
     width:100vw;
     height:100vh;
+    font-family: "Space Mono", monospace;
 }
     .container{
         display:flex;
@@ -39,6 +40,7 @@ body,html{
         display:block;
         font-size:14px;
         margin-bottom:2%;
+        font-weight:bold;
     }
     label[for="select"]{
         margin-top:6%;
@@ -100,5 +102,10 @@ body,html{
         justify-content:center;
         align-items:center;
     }
-
+    .total{
+        
+    }
+    .amount>p:nth-of-type(1){
+        font-weight: bold;
+    }
 }
