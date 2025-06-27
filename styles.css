@@ -22,7 +22,7 @@
     }
 
     .image {
-        flex-basis:20%;
+        flex-basis:10%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -70,7 +70,7 @@
     }
 
     main {
-        flex-basis:80%;
+        flex-basis:90%;
         border: 1px solid red;
         padding: 8%;
         background-color: hsl(0, 100%, 100%);
