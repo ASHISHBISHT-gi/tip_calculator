@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Mobile */
+@media screen and (max-width: 73.0625em) {
+body,html{
+    margin:0;
+    padding:0;
+    width:100vw;
+    height:100vh;
+}
+    .container{
+        display:flex;
+        flex-direction:column;
+        /* align-items:center; */
+        border:3px solid green;
+        
+    }
+    .image{
+        flex-basis:20%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    input{
+        min-width:0;
+        box-sizing: border-box;
+        font-size:24px;
+        text-align:end;
+        font-family: "Space Mono", monospace;
+    }
+    main{
+        flex-basis:80%;
+        border:1px solid red;
+        padding:8%;
+        /* box-sizing:border-box; */
+    }
+
+    label{
+        display:block;
+        font-size:14px;
+        margin-bottom:2%;
+    }
+    label[for="select"]{
+        margin-top:6%;
+    }
+    label[for="people"]{
+        margin-top:6%;
+    }
+
+    button{
+        font-family: "Space Mono", monospace;
+        font-size:24px;
+        font-weight: 700;
+    }
+    #bill,#people{
+        height:2.5rem;
+        width:100%;
+    }
+
+    .tip{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows:1fr 1fr 1fr;
+        gap:1rem;
+
+    }
+    .tip>button:nth-of-type(1){
+        grid-row:1/2;
+        grid-column:1;
+        height:3rem;
+    }
+    .tip>button:nth-of-type(2){
+        grid-row:1/2;
+        grid-column:2;
+    }
+    .calculator{
+        background-color:hsl(183, 100%, 15%);
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        height:32.92%;
+        margin-top:6%;
+        padding:5%;
+        box-sizing:border-box;
+    }
+    .calculator *{
+        margin:0;
+        padding:0;
+    }
+    .calculator>div{
+        display:flex;
+        justify-content:space-between;
+    }
+    .amount,.total{
+        display:flex;
+        flex-direction:column;
+    }
+    h2{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+
+}
