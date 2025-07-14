@@ -13,9 +13,10 @@
         background-color: rgba(197, 228, 231, 255);
     }
 
-    .image>img{
-        width:4rem;
+    .image>img {
+        width: 4rem;
     }
+
     .container {
         display: flex;
         flex-direction: column;
@@ -285,10 +286,13 @@
         -moz-appearance: none;
     }
 
-    input::-webkit-outer-spin-button,
+    /* input::-webkit-outer-spin-button,
     input::-webkit-inner-spin-button {
         -webkit-appearance: none;
         margin: 0;
+    } */
+    input[type=number] {
+        -moz-appearance: textfield;
     }
 
     input:hover {
