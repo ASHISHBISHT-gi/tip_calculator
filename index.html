@@ -1,77 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-    <link rel="stylesheet" href="./styles.css" />
-    <title>Frontend Mentor | Tip calculator app</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
-  </head>
-  <body class="container">
-    <section class="image">
-      <img src="./images/logo.svg" alt="" />
-    </section>
-    <main>
-      <section>
-        <form>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="stylesheet" href="./styles.css" />
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body class="container">
+  <section class="image">
+    <img src="./images/logo.svg" alt="" />
+  </section>
+  <main>
+    <section class="numbers">
+      <form novalidate>
+        <div class="billdata">
           <label for="bill">Bill</label>
-          <span><img src="./images/icon-dollar.svg" alt="" /></span>
-          <input min="0" type="number" id="bill" placeholder="0" />
-          <label for="select">Select Tip %</label>
-          <div class="tip">
-            <button>5%</button><button>10%</button><button>15%</button
-            ><button>25%</button><button>50%</button>
-            <input
-              min="0"
-              type="number"
-              name="Custom"
-              placeholder="Custom"
-              id="custom"
-            />
-          </div>
+          <label for="errorbill" class="eb be">cannot be zero</label>
+        </div>
+        <span><img src="./images/icon-dollar.svg" alt="" /></span>
+        <input min="0" type="number" id="bill" placeholder="0" />
+        <label for="select">Select Tip %</label>
+        <div class="tip">
+          <button>5%</button><button>10%</button><button>15%</button><button>25%</button><button>50%</button>
+          <input type="text" inputmode="numeric" pattern="^(100|[1-9]?[0-9])%?$" name="Custom" placeholder="Custom"
+            id="custom" />
+        </div>
+        <div class="peopledata">
           <label for="people">Number of People</label>
-          
-          <span><img src="./images/icon-person.svg" alt="" /></span>
-          <input type="number" id="people" placeholder="0"/>
-        </form>
-      </section>
-      <section class="calculator">
+          <label for="errorpeople" class="ep pe">Cannot be Zero</label>
+        </div>
+
+        <span><img src="./images/icon-person.svg" alt="" /></span>
+        <input type="number" id="people" placeholder="0" />
+      </form>
+    </section>
+    <section class="calculator">
+      <div>
         <div>
           <div class="amount">
             <p>Tip Amount</p>
             <p>/ person</p>
           </div>
-          <h2>$0.00</h2>
+          <h2 class="tipp">$0.00</h2>
         </div>
         <div>
           <div class="total">
             <p>Total</p>
             <p>/ person</p>
           </div>
-          <h2>$0.00</h2>
+          <h2 class="personn">$0.00</h2>
         </div>
-        <button>RESET</button>
-      </section>
-    </main>
-  </body>
+      </div>
+      <button onclick="location.reload()">RESET</button>
+    </section>
+  </main>
+  <script src="./index.js"></script>
+</body>
+
 </html>
 <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
