@@ -237,8 +237,7 @@
         padding: 2%;
         background-color: hsl(0, 100%, 100%);
         /* border-radius: 1rem; */
-        border-top-left-radius: 1rem;
-        border-top-right-radius: 1rem;
+        border-radius: 1rem;
         gap: 2rem;
         width: 50%;
         /* box-sizing:border-box; */
