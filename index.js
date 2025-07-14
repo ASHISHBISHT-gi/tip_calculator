@@ -218,3 +218,6 @@ custom.addEventListener('keydown', (e) => {
     }
 
 })
+submit_button.addEventListener('click',(e)=>{
+    form.reset();
+})
